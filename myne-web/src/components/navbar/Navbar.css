@@ -1,0 +1,157 @@
+/* ── NAVBAR ── */
+.navbar {
+    background-color: var(--primary-color);
+    border-bottom: 1px solid rgba(232, 115, 42, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+    width: auto;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+/* Hamburger button */
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1.5px solid rgba(255,255,255,0.3);
+    border-radius: var(--radius-sm);
+    color: var(--base-color);
+    width: 38px;
+    height: 38px;
+    font-size: 1.2rem;
+    transition: border-color 0.2s, background 0.2s;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.menu-btn:hover {
+    border-color: var(--accent-color);
+    background-color: rgba(232, 115, 42, 0.1);
+}
+
+/* Desktop nav links — hidden on mobile */
+.desktop-nav {
+    display: none;
+}
+
+/* Mobile menu dropdown */
+.mobile-menu {
+    background-color: var(--primary-dark);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 1.25rem;
+    animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.mobile-nav-list li a {
+    display: block;
+    padding: 0.7rem 0.75rem;
+    font-size: var(--fs-md);
+    font-weight: var(--fw-medium);
+    color: rgba(255,255,255,0.85);
+    border-radius: var(--radius-sm);
+    transition: background 0.15s, color 0.15s;
+}
+
+.mobile-nav-list li a:hover {
+    background-color: rgba(255,255,255,0.07);
+    color: var(--base-color);
+}
+
+.main-cta-button {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--accent-color);
+    color: var(--base-color);
+    font-family: var(--font-body);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.main-cta-button:hover {
+    background-color: var(--accent-dark);
+    transform: translateY(-1px);
+}
+
+/* ── DESKTOP ── */
+@media (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .desktop-nav-list {
+        display: flex;
+        align-items: center;
+        gap: 1.75rem;
+        list-style: none;
+    }
+
+    .desktop-nav-list li a {
+        font-size: var(--fs-sm);
+        font-weight: var(--fw-medium);
+        color: rgba(255,255,255,0.8);
+        transition: color 0.2s;
+        padding-bottom: 2px;
+        border-bottom: 2px solid transparent;
+    }
+
+    .desktop-nav-list li a:hover {
+        color: var(--base-color);
+        border-bottom-color: var(--accent-color);
+    }
+
+    .main-cta-button {
+        width: auto;
+        padding: 0.65rem 1.4rem;
+        font-size: var(--fs-sm);
+    }
+
+    .nav-container {
+        padding: 1rem 1.25rem;
+    }
+
+    .logo {
+        height: 36px;
+    }
+}
