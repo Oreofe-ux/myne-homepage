@@ -1,4 +1,4 @@
-import "./StatsBar.css";
+import "./statsBar.css";
 
 const stats = [
     { number: "500+", label: "Properties Analysed" },

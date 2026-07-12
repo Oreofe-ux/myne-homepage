@@ -1,4 +1,4 @@
-import "./HowItWorks.css";
+import "./howItWorks.css";
 
 const steps = [
     {
