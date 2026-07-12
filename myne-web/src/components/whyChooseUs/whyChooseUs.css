@@ -1,0 +1,87 @@
+.why-choose-us {
+    padding: var(--section-padding-mobile);
+    background-color: var(--primary-color);
+}
+
+.wcu-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.wcu-header .section-heading {
+    color: var(--base-color);
+}
+
+.wcu-header .section-subtext {
+    color: rgba(255,255,255,0.65);
+}
+
+.wcu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    list-style: none;
+}
+
+.wcu-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.wcu-card:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(232,115,42,0.4);
+}
+
+.wcu-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.wcu-title {
+    font-family: var(--font-heading);
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-semibold);
+    color: var(--base-color);
+    margin-bottom: 0.6rem;
+}
+
+.wcu-desc {
+    font-size: var(--fs-sm);
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+}
+
+@media (min-width: 640px) {
+    .wcu-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .why-choose-us {
+        padding: var(--section-padding);
+    }
+
+    .wcu-inner {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 4rem;
+    }
+
+    .wcu-header {
+        flex: 1;
+        position: sticky;
+        top: 100px;
+    }
+
+    .wcu-grid {
+        flex: 1.5;
+        grid-template-columns: 1fr;
+    }
+}
