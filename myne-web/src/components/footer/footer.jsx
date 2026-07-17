@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "./footer.css";
 import myneLogo from "../../assets/myne_logo_white_3.png";
 
 const navLinks = [
