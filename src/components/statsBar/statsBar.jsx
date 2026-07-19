@@ -2,9 +2,9 @@ import "./statsBar.css";
 
 const stats = [
     { number: "500+", label: "Properties Analysed" },
-    { number: "10+",  label: "Years of Data" },
-    { number: "40+",  label: "Clients Served" },
-    { number: "3",    label: "Markets Covered" },
+    { number: "5+",  label: "Years of Data" },
+    { number: "10+",  label: "Clients Served" },
+    { number: "1",    label: "Market Covered" },
 ];
 
 function StatsBar() {

@@ -17,10 +17,19 @@
 }
 
 /* Logo */
+.logo-container{
+    gap: 0.03rem;
+}
 .logo {
     width: auto;
     height: 32px;
     flex-shrink: 0;
+}
+.tagline{
+    color: var(--accent-color);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-bold);
+    font-style: italic;
 }
 
 /* Hamburger button */

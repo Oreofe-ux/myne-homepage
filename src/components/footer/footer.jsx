@@ -28,8 +28,8 @@ function Footer() {
                             Real estate data intelligence and asset management for developers, investors, and institutions across Africa.
                         </p>
                         <div className="footer-socials">
-                            <a href="#" aria-label="LinkedIn" className="social-link">in</a>
-                            <a href="#" aria-label="Twitter / X" className="social-link">𝕏</a>
+                            <a href="https://www.instagram.com/myne2live" aria-label="Instagram" className="social-link">📸</a>
+                            <a href="https://www.facebook.com/profile.php?id=61590748925500" aria-label="Facebook" className="social-link">f</a>
                         </div>
                     </div>
 
@@ -57,8 +57,8 @@ function Footer() {
                     <div className="footer-col">
                         <h4 className="footer-col-title">Contact</h4>
                         <ul className="footer-links footer-contact">
-                            <li>hello@myne.africa</li>
-                            <li>+234 xxx xxx xxxx</li>
+                            <li>myne2live@gmail.com</li>
+                            <li>+234 812 686 0989</li>
                             <li>Lagos, Nigeria</li>
                         </ul>
                     </div>

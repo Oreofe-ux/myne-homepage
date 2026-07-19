@@ -10,8 +10,10 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="nav-container">
+                <div className = "logo-container">
                 <img className="logo" alt="MYNE logo" src={myneLogo} />
-
+                <p className="tagline">Know before you sign.</p>
+                </div>
                 {/* Mobile hamburger */}
                 <button
                     className="menu-btn"

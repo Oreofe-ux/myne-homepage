@@ -31,13 +31,13 @@ function Hero() {
                         </div>
                         <div className="trust-divider" aria-hidden="true" />
                         <div className="trust-item">
-                            <span className="trust-number">40+</span>
+                            <span className="trust-number">10+</span>
                             <span className="trust-label">Clients served</span>
                         </div>
                         <div className="trust-divider" aria-hidden="true" />
                         <div className="trust-item">
-                            <span className="trust-number">3</span>
-                            <span className="trust-label">Markets covered</span>
+                            <span className="trust-number">1</span>
+                            <span className="trust-label">Market covered</span>
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ function Hero() {
                         </div>
                         <div className="card-footer">
                             <span className="card-stat">+18.4% YoY</span>
-                            <span className="card-region">Lagos, NG</span>
+                            <span className="card-region">Ibadan, NG</span>
                         </div>
                     </div>
 
