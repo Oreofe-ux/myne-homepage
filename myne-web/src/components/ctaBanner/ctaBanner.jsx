@@ -1,4 +1,4 @@
-import "./CtaBanner.css";
+import "./ctaBanner.css";
 
 function CtaBanner() {
     return (
